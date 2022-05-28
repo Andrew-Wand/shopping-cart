@@ -21,11 +21,31 @@ function Header(props) {
 
         <header>
             <div className="headerContainer">
+                
+                
                 <div className="logo-container">
                     <Link to='/'>
                         Hey!
                     </Link>
                 </div>
+
+                <nav>
+                    <Link to={'/'}>
+                        <li>Home</li>
+                    </Link>
+                    
+                    <Link to={'/shop'}>
+                        <li>Shop</li>
+                    </Link>
+                </nav>
+
+
+
+
+
+
+
+
             </div>
         </header>
 
