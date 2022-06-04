@@ -25,17 +25,17 @@ function Header(props) {
                 
                 <div className="logo-container">
                     <Link to='/'>
-                        Hey!
+                        LOGO
                     </Link>
                 </div>
 
-                <nav>
-                    <Link to={'/'}>
-                        <li>Home</li>
+                <nav className="nav-container">
+                    <Link to={'/'} className='nav-link'>
+                        <li className="nav-button">Home</li>
                     </Link>
                     
-                    <Link to={'/shop'}>
-                        <li>Shop</li>
+                    <Link to={'/shop'} className='nav-link'>
+                        <li className="nav-button">Shop</li>
                     </Link>
                 </nav>
 
