@@ -3,6 +3,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 import  Header  from "./Components/Header";
 import  Home  from "./Components/Home";
+import Shop from './Components/Shop';
 
 function App() {
   
@@ -11,7 +12,7 @@ function App() {
   const [addItem, setAddItem] = useState([]);
   
   
-  
+ 
   
   
   
@@ -26,6 +27,7 @@ function App() {
 
         <Routes>
             <Route path='/' element={<Home />}/>
+            <Route path='/shop' render={(props) => <Shop {...props} /> } element={<Shop />}/>
         </Routes>
 
 
