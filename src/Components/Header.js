@@ -1,4 +1,4 @@
-import { React } from "react";
+import  React  from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faShoppingCart} from '@fortawesome/free-solid-svg-icons';
@@ -42,6 +42,7 @@ function Header(props) {
                     
                     <Link to={'/cart'} className='nav-link'>
                         <li className="nav-button">
+                            
                             {cart}
                             
                             <span className="cartCount">

@@ -30,15 +30,6 @@ function Shop(props) {
 
 
 
-
-
-
-
-
-
-
-
-
 }
 
 
