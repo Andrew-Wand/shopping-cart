@@ -4,6 +4,8 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import  Header  from "./Components/Header";
 import  Home  from "./Components/Home";
 import Shop from './Components/Shop';
+import  Cart  from "./Components/Cart";
+
 
 function App() {
   
@@ -16,11 +18,11 @@ function App() {
     setUpdateCart(updateCart + 1);
 
 
-    // const item = e.target.parentNode.parentNode.childNodes;
-    // addItem.push({
-    //     name: item[1].textContent,
-    //     price: item[2].textContent
-    //     }); 
+    const storeItem = e.target.parentNode.parentNode.childNodes;
+    addItem.push({
+        name: storeItem[1].textContent,
+        price: storeItem[2].textContent
+        }); 
    
   }
   
@@ -40,6 +42,7 @@ function App() {
         <Routes>
             <Route path='/' element={<Home />}/>
             <Route path='/shop'  element={<Shop  handleClick={handleClick} />}/>
+            <Route path='/cart' element={<Cart  addItem={addItem} setUpdateCart={setUpdateCart} updateCart={updateCart} setAddItem={setAddItem}/> } />
         </Routes>
 
         

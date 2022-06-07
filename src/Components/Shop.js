@@ -10,7 +10,7 @@ function Shop(props) {
             </div>
 
             <div className="shop-container">
-                <div className="item">
+                <div className="shop-item">
                     <img src="" alt="" />
                     <p>Item 01</p>
                     <p><span>$</span> 30</p>

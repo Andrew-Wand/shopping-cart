@@ -35,3 +35,27 @@ body {
   font-size: 26px;
   color: #fff;
 }
+
+.cart {
+	width: 30%;
+	margin: auto;
+	padding-bottom: 35px;
+}
+
+.item {
+	display: flex;
+	justify-content: space-between;
+	margin: 40px 0; 
+	padding-bottom: 15px;
+	border-bottom: 2px solid; 
+}
+
+.Items {
+	margin-top: 20px;
+	text-transform: uppercase;
+}
+
+.container {
+	width: 85%; 
+	margin: auto;
+}
